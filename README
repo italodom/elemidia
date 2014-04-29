@@ -1,29 +1,31 @@
 ## Portas ##
 
 # Casos de Uso
-1. Abrir a porta
-2. Fechar a porta
-3. Trancar a porta
-4. Destrancar a porta
+1. O cliente deve poder abrir a porta
+2. O cliente deve poder fechar a porta
+3. O cliente deve poder trancar a porta utilizando uma chave de acesso
+4. O cliente deve poder destrancar a porta utilizando uma chave de acesso
 
 C1
-1. Abrir a porta
-    1.1 Para abrir a porta, ela deve estar
-    destrancada
-    1.2 Para abrir a porta, ela deve estar fechada
+1. O cliente solicita a abertura da porta
+    1.1 Informa o cliente se a porta estiver trancada
+    1.2 Informa o cliente se a porta já estiver aberta
+2. A porta é aberta
 
 C2
-1. Fechar a porta
-    1.1 Para fechar a porta, ela deve estar aberta
+1. O cliente solicita o fechamento da porta
+    1.1 Informa o cliente se a porta já estiver fechada
+2. A porta é fechada
 
 C3
-1. Trancar a porta
-    1.1 A porta deve estar fechada
-    1.2 A porta deve estar destrancada
-    1.3 E a chave deve ser compativel
+1. O cliente solicita que a porta seja trancada fornecendo uma chave de acesso
+    1.1 Informa o cliente que a porta já estiver trancada
+    1.2 Caso a porta esteja aberta, informa o cliente que a porta deve ser fechada
+    1.3 Caso a chave de acesso sejá inválida, informa o cliente
+2. A porta é trancada
 
 C4
-1. Destrancar a porta
-    1.1 A porta deve estar fechada
-    1.2 A porta deve estar trancada
-    1.3 E a chave deve ser compativel
+1. O cliente solicita que a porta seja destrancada fornecendo uma chave de acesso
+    1.1 Informa o cliente que a porta já está destrancada
+    1.2 Caso a chave de acesso sejá inválida, informa o cliente
+2. A porta é destrancada
