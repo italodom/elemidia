@@ -39,7 +39,6 @@ class DobradicaTest extends PHPUnit_Framework_TestCase
         $this->dobradica->abrir();
     }
 
-
     public function testFechar()
     {
         $this->dobradica->abrir();
