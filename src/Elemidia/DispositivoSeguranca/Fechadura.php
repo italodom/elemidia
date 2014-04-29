@@ -22,7 +22,7 @@ class Fechadura implements SegurancaInterface
         $this->estaTrancada = true;
 
         // create a log channel
-        $log = new Logger('elemidia');
+        $log = new Logger('ELEMIDIA');
         $log->pushHandler(new StreamHandler('log/elemidia.log', Logger::DEBUG));
 
         $this->logger = $log;
