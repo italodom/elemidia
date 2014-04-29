@@ -3,6 +3,7 @@
 namespace Elemidia\DispositivoAbertura;
 
 use Exception;
+use PHPUnit_Framework_Assert;
 use PHPUnit_Framework_TestCase;
 
 class DobradicaTest extends PHPUnit_Framework_TestCase
@@ -21,7 +22,7 @@ class DobradicaTest extends PHPUnit_Framework_TestCase
 
     public function testDobradicaIniciaFechada()
     {
-        $this->assertFalse(\PHPUnit_Framework_Assert::readAttribute($this->dobradica, 'estaAberta'));
+        $this->assertFalse(PHPUnit_Framework_Assert::readAttribute($this->dobradica, 'estaAberta'));
     }
 
     public function testAbrir()
