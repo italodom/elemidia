@@ -6,6 +6,10 @@
 3. O cliente deve poder trancar a porta utilizando uma chave de acesso
 4. O cliente deve poder destrancar a porta utilizando uma chave de acesso
 
+# Premissas
+1. A porta deverá iniciar fechada
+2. A porta deverá iniciar trancada
+
 C1
 1. O cliente solicita a abertura da porta
     1.1 Informa o cliente se a porta estiver trancada
